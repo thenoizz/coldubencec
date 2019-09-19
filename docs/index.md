@@ -1,6 +1,6 @@
----
-layout: home
----
+<!-- --- -->
+# layout: home
+<!-- --- -->
 
 ### Cross van Bencec 2019
 
