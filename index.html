@@ -44,18 +44,19 @@
         }
 
         /* grid styles */
+
         .main {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         }
+
         .container { 
         max-width: 960px;
         height: auto;
         display: flex;
         flex-wrap: wrap;
-
         }
 
         .column {
@@ -68,12 +69,11 @@
         @media (min-width: 576px) {
         .column {
             --width: var(--width-desktop, var(--width-mobile, 0));
-        }
+                }
         }
 
         @import url('https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap');
 
-        /* sections */
         .background {
             top:0;
             height:100%;
@@ -82,6 +82,7 @@
             margin:0;
             left:0;
             z-index: -1;
+            min-height: fit-content;
             }
 
         .header {
