@@ -13,7 +13,7 @@
     <script src="https://kit.fontawesome.com/2502756f27.js" crossorigin="anonymous"></script>
     <style>
         /* global styles */
-
+        @import url('https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap');
         html, body {
             height: 100%;
             zoom: 100%;
@@ -54,6 +54,7 @@
 
         .container { 
         max-width: 960px;
+        /* min-height: 400px; */
         height: auto;
         display: flex;
         flex-wrap: wrap;
@@ -72,17 +73,15 @@
                 }
         }
 
-        @import url('https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap');
-
         .background {
             top:0;
             height:100%;
             width:100%;
-            position:absolute;
+            position:fixed;
             margin:0;
             left:0;
             z-index: -1;
-            min-height: fit-content;
+            /* min-height: fit-content; */
             }
 
         .header {
@@ -92,12 +91,24 @@
         }
 
         .footer {
+        /* --width-mobile: 12; */
+        justify-content: center;
+        /* display: flex; */
+        /* align-items: flex-end; */
+        height: 50px;
+        /* padding: 50px; */
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        }
+
+        .icons {
         --width-mobile: 12;
         justify-content: center;
         display: flex;
         align-items: flex-end;
-        height: 150px;
-        
+        min-height: 50px;
+        height: max-content;
         }
 
         .content {
@@ -150,14 +161,22 @@
                 <aside class="content column">
                     <p class="cvb-text-dark"><a href="https://www.strava.com/clubs/48500/group_events/581552" target="new">Join the<br>Recon ride</a></p>
                 </aside>
-                <footer class="footer column">
+                <div class="header column">
+                    <!-- <p class="cvb-text-normal" style="font-size: 12px; font-weight:300;">All bikes are welcome!</p> -->
+                </div>
+                <div class="icons column">
                     <p class="cvb-text-normal">
                         <a href="https://www.instagram.com/explore/tags/crossvanbencec/" target="new"><i style="font-size: 38px" class="fab fa-instagram"></i></a>
                         &nbsp&nbsp<a href="https://www.strava.com/clubs/48500" target="new"><i style="font-size: 38px" class="fab fa-strava"></i></a>
                         &nbsp&nbsp<a href="https://www.facebook.com/groups/bencec/" target="new"><i style="font-size: 38px" class="fab fa-facebook"></i></a>
                     </p>
-                </footer>
+
+                </div>
+                
         </div>
     </div>
+    <footer class="footer">
+        <p class="cvb-text-normal" style="font-size: 14px; font-weight:300; text-align: center">&copy; 2019 Col du Bencec | All bikes are welcome!</p>
+    </footer>
 </body>
 </html>
