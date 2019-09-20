@@ -1,135 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Col du Bencec | Cross van Bencec 2019</title>
     <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<style>
-/* global styles */
+    <meta name="description" content="Gravel Cross aka Cross van Bencec, 21 de km de gravel, pădure și puțin asfalt">
+    <link rel="canonical" href="https://coldubencec.cc/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cross van Bencec 2019">
+    <meta property="og:image" content="images/cvb–splash-3.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    
+    <style>
+        /* global styles */
 
-html, body {
-    height: 100%;
-    zoom: 100%;
-}
+        html, body {
+            height: 100%;
+            zoom: 100%;
+        }
 
-*, ::after, ::before {
-    box-sizing: border-box;
-}
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
 
-a{
-    text-decoration: underline;
-    font-family: 'Raleway',Helvetica,Arial,sans-serif;
-    font-weight:700;
-    font-style:normal;
-    font-size:24px;
-    color:rgba(218,210,191,1.0);
-    text-align:center;
-    line-height:30px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
+        a {
+            text-decoration: underline;
+            font-family: 'Raleway',Helvetica,Arial,sans-serif;
+            font-weight:700;
+            font-style:normal;
+            font-size:24px;
+            color:rgba(218,210,191,1.0);
+            text-align:center;
+            line-height:30px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
 
-:hover {
-    color:#0D1426;
-}
+        :hover {
+            color:#0D1426;
+        }
 
-/* grid styles */
-.main {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container { 
-  max-width: 960px;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
+        /* grid styles */
+        .main {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        .container { 
+        max-width: 960px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
 
-}
+        }
 
-.column {
-  --columns: 12; /* number of columns in the grid system */
-  --width: var(--width-mobile, 0); /* default width of the element */
-  padding: 16px;
-  flex-basis: calc(var(--width) / var(--columns) * 100%);
-}
+        .column {
+        --columns: 12; /* number of columns in the grid system */
+        --width: var(--width-mobile, 0); /* default width of the element */
+        padding: 16px;
+        flex-basis: calc(var(--width) / var(--columns) * 100%);
+        }
 
-@media (min-width: 576px) {
-  .column {
-    --width: var(--width-desktop, var(--width-mobile, 0));
-  }
-}
+        @media (min-width: 576px) {
+        .column {
+            --width: var(--width-desktop, var(--width-mobile, 0));
+        }
+        }
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap');
 
-/* sections */
-.background {
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    margin:0;
-    left:0;
-    z-index: -1;
-    }
+        /* sections */
+        .background {
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+            margin:0;
+            left:0;
+            z-index: -1;
+            }
 
-.header {
-  --width-mobile: 12;
-  justify-content: center;
-  display: flex;
-}
+        .header {
+        --width-mobile: 12;
+        justify-content: center;
+        display: flex;
+        }
 
-.content {
-  --width-mobile: 12;
-  --width-desktop: 6;
-  padding: 0%;
-}
+        .content {
+        --width-mobile: 12;
+        --width-desktop: 6;
+        padding: 0%;
+        }
 
-.cvb-logo { 
-    height:210px;
-    width:209px;
-    margin: 30px;
-    }
+        .cvb-logo { 
+            height:210px;
+            width:209px;
+            margin: 30px;
+            }
 
-.cvb-text-normal{
-    font-family: 'Raleway',Helvetica,Arial,sans-serif;
-    font-weight:700;
-    font-style:normal;
-    font-size:24px;
-    color:rgba(218,210,191,1.0);
-    text-align:center;
-    line-height:30.0px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-.cvb-text-dark{
-    font-family: 'Raleway',Helvetica,Arial,sans-serif;
-    font-weight:700;
-    font-style:normal;
-    font-size:24px;
-    color:#0D1426;
-    text-align:center;
-    line-height:30px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
+        .cvb-text-normal{
+            font-family: 'Raleway',Helvetica,Arial,sans-serif;
+            font-weight:700;
+            font-style:normal;
+            font-size:24px;
+            color:rgba(218,210,191,1.0);
+            text-align:center;
+            line-height:30.0px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .cvb-text-dark{
+            font-family: 'Raleway',Helvetica,Arial,sans-serif;
+            font-weight:700;
+            font-style:normal;
+            font-size:24px;
+            color:#0D1426;
+            text-align:center;
+            line-height:30px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
 
-</style>
-    </head>
-    <body>
-        <div class="main">
-            <img class="background" src="images/cvb-background.png">
-            <div class="container">
-                    <header class="header column">
-                            <a href="https://www.strava.com/clubs/48500"><img class="cvb-logo" src="images/cvb-logo.svg"></a>
-                    
-                    </header>
-                    <main class="content column">
-                      <p class="cvb-text-normal">Coming soon<br> in October</p>
-                    </main>
-                    <aside class="content column">
-                      <p class="cvb-text-dark"><a href="https://www.strava.com/clubs/48500/group_events/581552">Join the<br>Recon ride</a></p>
-                    </aside>
-                  </div>
-                </div>
-    </body>
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img class="background" src="images/cvb-background.png">
+        <div class="container">
+                <header class="header column">
+                    <a href="https://www.strava.com/clubs/48500"><img class="cvb-logo" src="images/cvb-logo.svg"></a>
+                </header>
+                <main class="content column">
+                    <p class="cvb-text-normal">Coming soon<br> in October</p>
+                </main>
+                <aside class="content column">
+                    <p class="cvb-text-dark"><a href="https://www.strava.com/clubs/48500/group_events/581552">Join the<br>Recon ride</a></p>
+                </aside>
+        </div>
+    </div>
+</body>
 </html>
