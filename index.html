@@ -88,6 +88,7 @@
         --width-mobile: 12;
         justify-content: center;
         display: flex;
+        padding-top: 50px;
         }
 
         .footer {
@@ -96,7 +97,7 @@
         /* display: flex; */
         /* align-items: flex-end; */
         height: 50px;
-        /* padding: 50px; */
+        /* padding-top: 50px; */
         position: fixed;
         bottom: 0;
         width: 100%;
@@ -109,6 +110,18 @@
         align-items: flex-end;
         min-height: 50px;
         height: max-content;
+        }
+
+        .results {
+        --width-mobile: 12;
+        justify-content: center;
+        display: flex;
+        align-items: flex-end;
+        min-height: 50px;
+        /* width: 100%; */
+        height: max-content;
+        padding-bottom: 100px;
+        
         }
 
         .content {
@@ -145,6 +158,18 @@
             margin-top: 8px;
             margin-bottom: 8px;
         }
+        .cvb-text-disabled{
+            font-family: 'Raleway',Helvetica,Arial,sans-serif;
+            font-weight:700;
+            font-style:normal;
+            font-size:24px;
+            color:#9d4e5c;
+            text-align:center;
+            line-height:30px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
 
     </style>
 </head>
@@ -155,23 +180,34 @@
                 <header class="header column">
                     <a href="https://www.strava.com/clubs/48500" target="new"><img class="cvb-logo" src="images/cvb-logo.svg"></a>
                 </header>
+                <div class="icons column">
+                        <p class="cvb-text-normal">
+                            <a href="https://www.instagram.com/explore/tags/crossvanbencec/" target="new"><i style="font-size: 38px" class="fab fa-instagram"></i></a>
+                            &nbsp&nbsp<a href="https://www.strava.com/clubs/48500" target="new"><i style="font-size: 38px" class="fab fa-strava"></i></a>
+                            &nbsp&nbsp<a href="https://www.facebook.com/groups/bencec/" target="new"><i style="font-size: 38px" class="fab fa-facebook"></i></a>
+                        </p>
+    
+                    </div>
                 <main class="content column">
-                    <p class="cvb-text-normal">Stage 1:<br>12th October 2019</p>
+                    <p class="cvb-text-normal"><a href="images/cvb-map.png" target="new">Route Map</a></p>
+                    <p class="cvb-text-normal"><a href="downloads/Cross_Van_Bencec_v1.gpx" target="new">Route GPX</a></p>
+
                 </main>
                 <aside class="content column">
-                    <p class="cvb-text-dark"><a href="https://www.strava.com/clubs/48500/group_events/581552" target="new">Join the next Recon Ride</a></p>
+                    <p class="cvb-text-normal">Join us on Stage 2:<br> <a href="https://www.strava.com/clubs/48500/group_events/597446" target="new">10th November 2019</a></p>
                 </aside>
-                <div class="header column">
-                    <!-- <p class="cvb-text-normal" style="font-size: 12px; font-weight:300;">All bikes are welcome!</p> -->
+                
+                <div style="padding-top: 50px;" class="icons column">
+                                <p class="cvb-text-normal">Results:</p>
+                        </div>
+                   
+                        
+                        <div class="results column">                        
+                        <iframe style="width: 90%;height:300px ;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRAwhoXQfvjNGzgDgyJUe7mRDQ-786VkAa9IelUT8KpnTHJbmYCBpmMMTYOqmz1obro9pBnS5jZFzSd/pubhtml?widget=true&amp;headers=false"></iframe>
+                            
+                    </div>
                 </div>
-                <div class="icons column">
-                    <p class="cvb-text-normal">
-                        <a href="https://www.instagram.com/explore/tags/crossvanbencec/" target="new"><i style="font-size: 38px" class="fab fa-instagram"></i></a>
-                        &nbsp&nbsp<a href="https://www.strava.com/clubs/48500" target="new"><i style="font-size: 38px" class="fab fa-strava"></i></a>
-                        &nbsp&nbsp<a href="https://www.facebook.com/groups/bencec/" target="new"><i style="font-size: 38px" class="fab fa-facebook"></i></a>
-                    </p>
-
-                </div>
+            
                 
         </div>
     </div>
